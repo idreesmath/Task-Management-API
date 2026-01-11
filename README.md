@@ -31,20 +31,33 @@ Fast, modern Python package manager for dependency management.
 ```
 Task-Management-API/
 ├── .claude/
-│   └── skills/              # Reusable AI agent skills
+│   └── skills/                              # Reusable AI agent skills
+│       ├── tdd-api-builder/                 # TDD workflow guidance
+│       ├── fastapi-endpoint-generator/      # FastAPI endpoint patterns
+│       ├── sqlmodel-designer/               # Database schema design
+│       ├── project-structure-initializer/   # Project setup automation
+│       ├── code-quality-reviewer/           # Code review guidance
+│       └── skill-creator/                   # Skill creation guide
 ├── app/
-│   ├── models/              # Database models
+│   ├── models/                              # Database models
+│   │   ├── __init__.py
 │   │   └── task.py
-│   ├── routers/             # API endpoints
+│   ├── routers/                             # API endpoints
+│   │   ├── __init__.py
 │   │   └── tasks.py
-│   ├── main.py              # FastAPI app
-│   └── database.py          # Database config
+│   ├── __init__.py
+│   ├── main.py                              # FastAPI app
+│   └── database.py                          # Database config
 ├── tests/
-│   ├── conftest.py          # Test fixtures
-│   └── test_tasks.py        # API tests
-├── pyproject.toml           # Project dependencies
-├── README.md                # This file
-└── CLAUDE.md                # AI agent documentation
+│   ├── __init__.py
+│   ├── conftest.py                          # Test fixtures
+│   └── test_tasks.py                        # API tests
+├── .gitignore                               # Git ignore rules
+├── .python-version                          # Python version
+├── pyproject.toml                           # Project dependencies
+├── uv.lock                                  # Dependency lock file
+├── README.md                                # This file
+└── CLAUDE.md                                # AI agent documentation
 ```
 
 ## Quick Start
